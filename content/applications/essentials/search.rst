@@ -183,6 +183,59 @@ It is possible to *customize groups* by using a field present on the model. To d
 
 .. _search/favorites:
 
+Comparison
+==========
+
+Certain reporting dashboards include a :guilabel:`Comparison` section in the drop-down menus of
+their :guilabel:`Search...` bars. This includes the *Production Analysis* report for the
+*Manufacturing* app, and the *Purchase* report for the *Purchase* app, among others.
+
+The options in the :icon:`fa-adjust` :guilabel:`Comparison` section are used to compare data from
+two different time periods. There are two comparison options to choose from: :guilabel:`End Date:
+Previous Period` and :guilabel:`End Date: Previous Year`.
+
+.. important::
+   The :guilabel:`Comparison` section only appears in the :guilabel:`Search...` bar drop-down menu
+   if one or more time periods is selected in the :guilabel:`End Date` section. This is because, if
+   no time period is specified, there is nothing to make a comparison to.
+
+   Additionally, the :guilabel:`Comparison` feature is meant to be used with the
+   :icon:`fa-pie-chart` :guilabel:`(pie chart)` graph type, or the :icon:`oi-view-pivot`
+   :guilabel:`(pivot)` view. A :guilabel:`Comparison` option can be selected even if another view is
+   enabled, but doing so does not change the way data is displayed on the report.
+
+.. image:: search/comparison-section.png
+   :align: center
+   :alt: The Search... bar for the production analysis report.
+
+To view data using one of the two comparisons, begin by selecting a time period in the
+:guilabel:`End Date` field of the :guilabel:`Search...` bar drop-down menu. Then, make sure to
+select either the :icon:`fa-pie-chart` :guilabel:`(pie chart)` graph type or the
+:icon:`oi-view-pivot` :guilabel:`(pivot)` view.
+
+Finally, select either :guilabel:`End Date: Previous Period` or :guilabel:`End Date: Previous Year`
+in the :guilabel:`Comparison` section of the :guilabel:`Search...` bar drop-down menu.
+
+With one of the :guilabel:`Comparison` options enabled, the pie chart appears as a large circle with
+a smaller circle inside of it. The larger circle represents the selected time period, while the
+smaller circle represents the same unit of time (month, quarter, year), one period or year prior.
+
+.. example::
+   :guilabel:`Q2` is selected in the :guilabel:`End Date` filter section of the
+   :guilabel:`Search...` bar drop-down menu. In the :guilabel:`Comparison` section, :guilabel:`End
+   Date: Previous Year` is selected.
+
+   The current year is 2024, so the larger circle shows data for the second quarter (Q2) of 2024.
+   The smaller circle shows data for the second quarter of 2023, which is the same time period, but
+   one *year* prior.
+
+   If :guilabel:`End Date: Previous Period` is selected instead, the smaller circle shows data for
+   the first quarter of 2024, which is the same time period, but one *period* prior.
+
+.. image:: search/comparison.png
+   :align: center
+   :alt: The comparison view of the Production Analysis report.
+
 Favorites
 =========
 
